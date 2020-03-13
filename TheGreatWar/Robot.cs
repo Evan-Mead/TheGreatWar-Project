@@ -19,7 +19,7 @@ namespace TheGreatWar
             this.name = name;
             this.health = health;
             this.power_level = power_level;
-            this.weapon = weapon;
+            this.weapon = Weapon;
             this.attack_power = attack_power;
         }
     }

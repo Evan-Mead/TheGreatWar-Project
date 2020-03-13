@@ -9,11 +9,20 @@ namespace TheGreatWar
     class Weapon
     {
         //Member Variables - Declares variables that can be accessed anywhere in this class
-
-
-
-        //Constructor - Sets the scores to 0 when a new game is created
-
+        public string fist;
+        public string hologram;
+        public string laser;
+        
+        public Weapon(string fist, string hologram, string laser)
+        {
+            this.fist = fist;
+            this.hologram = hologram;
+            this.laser = laser;
+        }
+        //Constructor
+        public Weapon weaponOne = new Weapon("Fist");
+        public Weapon weaponTwo = new Weapon("Hologram");
+        public Weapon weaponThree = new Weapon("Laser");
 
         //Member Methods - All your methods go below here!
 
