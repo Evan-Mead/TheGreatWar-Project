@@ -8,22 +8,17 @@ namespace TheGreatWar
 {
     class Dinosaur
     {
-        //Member Variables - Declares variables that can be accessed anywhere in this class
-
         public string type;
         public double health;
         public string energy;
         public double attack_power;
 
-        //Constructor - Sets the scores to 0 when a new game is created
-
-        public Dinosaur(string type, double health, string energy, double attack_power);
-
-        //Member Methods - All your methods go below here!
-
-
-        //This is the main method that is called in the Program when you press Start
-        //Call your other methods inside this method
-
+        public Dinosaur(string type, double health, string energy, double attack_power)
+        {
+            this.type = type;
+            this.health = health;
+            this.energy = energy;
+            this.attack_power = attack_power;
+        }
     }
 }

@@ -9,35 +9,13 @@ namespace TheGreatWar
     class Herd
     {
         //Member Variables - Declares variables that can be accessed anywhere in this class
-        Dinosaur dinosaur1 = new Dinosaur("Ducky");
 
+        public Herd dinosaurOne = new Dinosaur("Brontosaurus", 100, " LVL. 25", 30);
+        public Herd dinosaurTwo = new Dinosaur("Pterodactyl", 80, "LVL. 20", 20);
+        public Herd dinosaurThree = new Dinosaur("T-Rex", 120, "LVL. 30", 40);
 
         //Constructor - Sets the scores to 0 when a new game is created
-
-        public Dinosaur(string name)
-        {
-            this.type = "Ducky";
-            health = 120;
-            energy = "Energy 25";
-            attack_power = 20;
-        }
-
-        public Dinosaur(string name)
-        {
-            this.type = "Petri";
-            health = 100;
-            energy = "Energy 15";
-            attack_power = 20;
-        }
-
-        public Dinosaur(string name)
-        {
-            this.type = "Spike";
-            health = 150;
-            energy = "Energy 30";
-            attack_power = 40;
-        }
-
+        public void()
         //Member Methods - All your methods go below here!
 
 
