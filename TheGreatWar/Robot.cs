@@ -11,16 +11,27 @@ namespace TheGreatWar
         public string name;
         public double health;
         public string power_level;
-        public Weapon weapon;
+        public Weapon attack;
         public double attack_power;
 
-        public Robot(string name, double health, string power_level, Weapon weapon, double attack_power)
+        public Robot(string name, double health, string power_level, Weapon attack, double attack_power)
         {
             this.name = name;
             this.health = health;
             this.power_level = power_level;
-            this.weapon = Weapon;
+            this.attack = attack;
             this.attack_power = attack_power;
+        }
+
+        static void Main(string[] args)
+        {
+            Weapon Fist = new Weapon("Punch");
+            Weapon Hologram = new Weapon("Blind");
+            Weapon Laser = new Weapon("Incinerate");
+
+            Console.WriteLine(Fist.attack);
+            Console.WriteLine(Hologram.attack);
+            Console.WriteLine(Laser.attack);
         }
     }
 }

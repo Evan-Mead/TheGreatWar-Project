@@ -8,26 +8,11 @@ namespace TheGreatWar
 {
     class Weapon
     {
-        //Member Variables - Declares variables that can be accessed anywhere in this class
-        public string fist;
-        public string hologram;
-        public string laser;
-        
-        public Weapon(string fist, string hologram, string laser)
+        public string attack;
+
+        public Weapon(string attack)
         {
-            this.fist = fist;
-            this.hologram = hologram;
-            this.laser = laser;
+            this.attack = attack;
         }
-        //Constructor
-        public Weapon weaponOne = new Weapon("Fist");
-        public Weapon weaponTwo = new Weapon("Hologram");
-        public Weapon weaponThree = new Weapon("Laser");
-
-        //Member Methods - All your methods go below here!
-
-
-        //This is the main method that is called in the Program when you press Start
-        //Call your other methods inside this method
     }
 }

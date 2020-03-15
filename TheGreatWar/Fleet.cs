@@ -17,6 +17,10 @@ namespace TheGreatWar
         //public void()
 
         //Member Methods - All your methods go below here!
+        public Robot()
+        {
+
+        }
 
 
         //This is the main method that is called in the Program when you press Start
