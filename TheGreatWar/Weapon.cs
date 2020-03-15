@@ -14,5 +14,10 @@ namespace TheGreatWar
         {
             this.attack = attack;
         }
+        
+        public void Run()
+        {
+
+        }
     }
 }

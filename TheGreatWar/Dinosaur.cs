@@ -20,5 +20,10 @@ namespace TheGreatWar
             this.energy = energy;
             this.attack_power = attack_power;
         }
+
+        public void Run()
+        {
+
+        }
     }
 }

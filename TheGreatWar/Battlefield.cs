@@ -8,6 +8,18 @@ namespace TheGreatWar
 {
     class Battlefield
     {
+        public Fleet()
+        {
+
+        }
+
+        public Herd()
+        {
+
+        }
         public void Run()
+        {
+
+        }
     }
 }
