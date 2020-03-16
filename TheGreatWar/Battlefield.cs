@@ -17,9 +17,5 @@ namespace TheGreatWar
         {
 
         }
-        public void Run()
-        {
-
-        }
     }
 }

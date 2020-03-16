@@ -33,10 +33,5 @@ namespace TheGreatWar
             Console.WriteLine(Hologram.attack);
             Console.WriteLine(Laser.attack);
         }
-
-        public void Run()
-        {
-
-        }
     }
 }
