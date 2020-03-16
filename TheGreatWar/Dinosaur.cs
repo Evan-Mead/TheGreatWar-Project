@@ -14,15 +14,14 @@ namespace TheGreatWar
         public Weapon attack;
         public int attack_power;
 
-        public Dinosaur(string type, int health, string energy, int attack_power)
+        public Dinosaur(string type, int health, string energy, Weapon attack, int attack_power)
         {
             this.type = type;
             this.health = health;
             this.energy = energy;
+            this.attack = attack;
             this.attack_power = attack_power;
         }
-
-
 
         public Weapon dinosaurAttackOne = new Weapon("Bite");
         public Weapon dinosaurAttackTwo = new Weapon("Slash");

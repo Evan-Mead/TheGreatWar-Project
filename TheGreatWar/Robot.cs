@@ -14,10 +14,12 @@ namespace TheGreatWar
         public Weapon attack;
         public int attack_power;
 
-        public Robot(string name, string power_level, int attack_power)
+        public Robot(string name, int health, string power_level, Weapon attack, int attack_power)
         {
             this.name = name;
+            this.health = health;
             this.power_level = power_level;
+            this.attack = attack;
             this.attack_power = attack_power;
         }
 
