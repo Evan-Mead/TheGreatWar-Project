@@ -14,9 +14,8 @@ namespace TheGreatWar
         public Weapon robotAttackOne;
         public Weapon robotAttackTwo;
         public Weapon robotAttackThree;
-        public int attack_power;
 
-        public Robot(string name, int health, string power_level, Weapon robotAttackOne, Weapon robotAttackTwo, Weapon robotAttackThree, int attack_power)
+        public Robot(string name, int health, string power_level, Weapon robotAttackOne, Weapon robotAttackTwo, Weapon robotAttackThree)
         {
             this.name = name;
             this.health = health;
@@ -24,7 +23,13 @@ namespace TheGreatWar
             this.robotAttackOne = robotAttackOne;
             this.robotAttackTwo = robotAttackTwo;
             this.robotAttackThree = robotAttackThree;
-            this.attack_power = attack_power;
         }
+
+        //public Robot(Weapon)
+        ////{
+        ////    robotAttackOne = new robotAttackOne("Fist", 30);
+        ////    robotAttackTwo = new Weapon("Hologram", 20);
+        ////    robotAttackThree = new Weapon("Laser", 50);
+        ////}
     }
 }
