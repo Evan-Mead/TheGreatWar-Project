@@ -24,12 +24,5 @@ namespace TheGreatWar
             this.dinosaurAttackTwo = dinosaurAttackTwo;
             this.dinosaurAttackThree = dinosaurAttackThree;
         }
-
-        //public Dinosaur(Weapon)
-        //{
-        //    dinosaurAttackOne = new Weapon("Bite", 30);
-        //    dinosaurAttackTwo = new Weapon("Slash", 20);
-        //    dinosaurAttackThree = new Weapon("Tail Whip", 50);
-        //}
     }
 }

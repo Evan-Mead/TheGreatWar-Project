@@ -24,12 +24,5 @@ namespace TheGreatWar
             this.robotAttackTwo = robotAttackTwo;
             this.robotAttackThree = robotAttackThree;
         }
-
-        //public Robot(Weapon)
-        ////{
-        ////    robotAttackOne = new robotAttackOne("Fist", 30);
-        ////    robotAttackTwo = new Weapon("Hologram", 20);
-        ////    robotAttackThree = new Weapon("Laser", 50);
-        ////}
     }
 }

@@ -20,6 +20,9 @@ namespace TheGreatWar
             robotOne = new Robot("Bender", 100, " LVL. 25", robotAttackOne, robotAttackTwo, robotAttackThree);
             robotTwo = new Robot("ClapTrap", 80, "LVL. 20", robotAttackOne, robotAttackTwo, robotAttackThree);
             robotThree = new Robot("R2", 120, "LVL. 30", robotAttackOne, robotAttackTwo, robotAttackThree);
+            //robotAttackOne = new Weapon("Fist", 30);
+            //robotAttackTwo = new Weapon("Hologram", 20);
+            //robotAttackThree = new Weapon("Laser", 50);
         }
     }
 }

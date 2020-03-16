@@ -11,7 +11,7 @@ namespace TheGreatWar
         string fleet = "Fleet";
         string herd = "Herd";
         int minHealth = 0;
-        int maxHealth = 120;
+        int maxHealth = 300;
         int fleetHealth;
         int herdHealth;
 
@@ -63,20 +63,20 @@ namespace TheGreatWar
         public void RunBattle()
         {
             Console.WriteLine("This is a simulated battle between a fleet of robots and a herd of dinosaurs.");
-            Console.WriteLine(AttackTurns());
+
             while (fleetHealth < 3 && herdHealth < 3)
             {
-                Console.WriteLine(fleet + " attack turn.");
+                Console.WriteLine(fleet + "Fleet attack turn.");
                 Console.ReadLine();
 
                 fleetHealth = RandomAttacks(minHealth, maxHealth);
-                Console.WriteLine("Attacked for: " + " ");
+                Console.WriteLine("Fleet attacked for: " + " ");
 
-                Console.WriteLine(herd + " attack turn.");
+                Console.WriteLine(herd + "Herd attack turn.");
                 Console.ReadLine();
 
                 herdHealth = RandomAttacks(minHealth, maxHealth);
-                Console.WriteLine("Attacked for: " + " ");
+                Console.WriteLine("Herd attacked for: " + " ");
 
                 BattleDamageAssessment();
 
