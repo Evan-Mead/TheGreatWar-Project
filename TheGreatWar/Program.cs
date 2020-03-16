@@ -11,7 +11,7 @@ namespace TheGreatWar
         static void Main(string[] args)
         {
             Battlefield sim = new Battlefield();
-            sim.Run();
+            sim.RunBattle();
         }
     }
 }

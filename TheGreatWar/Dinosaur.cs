@@ -11,6 +11,7 @@ namespace TheGreatWar
         public string type;
         public double health;
         public string energy;
+        public Weapon attack;
         public double attack_power;
 
         public Dinosaur(string type, double health, string energy, double attack_power)
@@ -19,6 +20,17 @@ namespace TheGreatWar
             this.health = health;
             this.energy = energy;
             this.attack_power = attack_power;
+        }
+
+        public Weapon dinosaurAttackOne = new Weapon("Bite");
+        public Weapon dinosaurAttackTwo = new Weapon("Slash");
+        public Weapon dinosaurAttackThree = new Weapon("Tail Whip");
+
+        public Dinosaur(Weapon dinosaurAttackOne, Weapon dinosaurAttackTwo, Weapon dinosaurAttackThree)
+        {
+            this.dinosaurAttackOne = dinosaurAttackOne;
+            this.dinosaurAttackTwo = dinosaurAttackTwo;
+            this.dinosaurAttackThree = dinosaurAttackThree;
         }
     }
 }
