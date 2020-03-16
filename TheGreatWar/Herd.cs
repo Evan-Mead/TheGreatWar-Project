@@ -18,5 +18,12 @@ namespace TheGreatWar
             this.dinosaurTwo = dinosaurTwo;
             this.dinosaurThree = dinosaurThree;
         }
+
+        public Herd(Weapon dinosaurAttackOne, Weapon dinosaurAttackTwo, Weapon dinosaurAttackThree)
+        {
+            this.dinosaurAttackOne = new Weapon("Bite");
+            this.dinosaurAttackTwo = new Weapon("Slash");
+            this.dinosaurAttackThree = new Weapon("Tail Whip");
+        }
     }
 }

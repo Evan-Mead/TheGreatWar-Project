@@ -8,15 +8,23 @@ namespace TheGreatWar
 {
     class Fleet
     {
-        public Robot robotOne = new Robot("Bender", 100, " LVL. 25", Weapon, 30);
-        public Robot robotTwo = new Robot("ClapTrap", 80, "LVL. 20", Weapon, 20);
-        public Robot robotThree = new Robot("R2", 120, "LVL. 30", Weapon, 40);
+        public Robot robotOne = new Robot("Bender", 100, " LVL. 25", 30);
+        public Robot robotTwo = new Robot("ClapTrap", 80, "LVL. 20", 20);
+        public Robot robotThree = new Robot("R2", 120, "LVL. 30", 40);
+
 
         public Fleet(Robot robotOne, Robot robotTwo, Robot robotThree)
         {
             this.robotOne = robotOne;
             this.robotTwo = robotTwo;
             this.robotThree = robotThree;
+        }
+
+        public Fleet(Weapon robotAttackOne, Weapon robotAttackTwo, Weapon robotAttackThree)
+        {
+            this.robotAttackOne = new Weapon("Fist");
+            this.robotAttackTwo = new Weapon("Hologram");
+            this.robotAttackThree = new Weapon("Laser");
         }
     }
 }
