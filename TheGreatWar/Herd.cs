@@ -11,5 +11,12 @@ namespace TheGreatWar
         public Dinosaur dinosaurOne = new Dinosaur("Brontosaurus", 100, "NRG 25", 30);
         public Dinosaur dinosaurTwo = new Dinosaur("Pterodactyl", 80, "NRG 20", 20);
         public Dinosaur dinosaurThree = new Dinosaur("T-Rex", 120, "NRG 30", 40);
+
+        public Herd(Dinosaur dinosaurOne, Dinosaur dinosaurTwo, Dinosaur dinosaurThree)
+        {
+            this.dinosaurOne = dinosaurOne;
+            this.dinosaurTwo = dinosaurTwo;
+            this.dinosaurThree = dinosaurThree;
+        }
     }
 }

@@ -13,14 +13,26 @@ namespace TheGreatWar
         public string power_level;
         public Weapon attack;
         public double attack_power;
+        private string v1;
+        private int v2;
+        private string v3;
+        private Weapon weapon;
+        private int v4;
 
-        public Robot(string name, double health, string power_level, Weapon attack, double attack_power)
+        public Robot(string name, string power_level, double attack_power)
         {
             this.name = name;
-            this.health = health;
             this.power_level = power_level;
-            this.attack = attack;
             this.attack_power = attack_power;
+        }
+
+        public Robot(string v1, int v2, string v3, Weapon weapon, int v4)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+            this.weapon = weapon;
+            this.v4 = v4;
         }
 
         static void Main(string[] args)
@@ -32,6 +44,11 @@ namespace TheGreatWar
             Console.WriteLine(Fist.attack);
             Console.WriteLine(Hologram.attack);
             Console.WriteLine(Laser.attack);
+        }
+
+        public void Run()
+        {
+
         }
     }
 }
