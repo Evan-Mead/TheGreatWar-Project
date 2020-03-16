@@ -9,18 +9,20 @@ namespace TheGreatWar
     class Dinosaur
     {
         public string type;
-        public double health;
+        public int health;
         public string energy;
         public Weapon attack;
-        public double attack_power;
+        public int attack_power;
 
-        public Dinosaur(string type, double health, string energy, double attack_power)
+        public Dinosaur(string type, int health, string energy, int attack_power)
         {
             this.type = type;
             this.health = health;
             this.energy = energy;
             this.attack_power = attack_power;
         }
+
+
 
         public Weapon dinosaurAttackOne = new Weapon("Bite");
         public Weapon dinosaurAttackTwo = new Weapon("Slash");

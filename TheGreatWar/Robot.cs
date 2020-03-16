@@ -9,12 +9,12 @@ namespace TheGreatWar
     class Robot
     {
         public string name;
-        public double health;
+        public int health;
         public string power_level;
         public Weapon attack;
-        public double attack_power;
+        public int attack_power;
 
-        public Robot(string name, string power_level, double attack_power)
+        public Robot(string name, string power_level, int attack_power)
         {
             this.name = name;
             this.power_level = power_level;

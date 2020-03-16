@@ -33,7 +33,7 @@ namespace TheGreatWar
             return result;
         }
 
-        public void BDA()
+        public void BattleDamageAssessment()
         {
             if (fleetHealth > herdHealth)
             {
@@ -47,7 +47,6 @@ namespace TheGreatWar
             }
         }
         
-        {
             public void BattleWinner()
         {
             if (fleetHealth > herdHealth)
@@ -79,7 +78,7 @@ namespace TheGreatWar
                 herdHealth = RandomAttacks(minHealth, maxHealth);
                 Console.WriteLine("Attacked for: " + " ");
 
-                BDA();
+                BattleDamageAssessment();
 
                 Console.WriteLine();
 

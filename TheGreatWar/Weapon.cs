@@ -8,7 +8,7 @@ namespace TheGreatWar
 {
     class Weapon
     {
-        public string attack;
+        private string attack;
 
         public Weapon(string attack)
         {
