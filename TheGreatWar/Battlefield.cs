@@ -8,8 +8,8 @@ namespace TheGreatWar
 {
     class Battlefield
     {
-        string fleet = "Fleet";
-        string herd = "Herd";
+        //public Fleet();
+        //public Herd();
         int minHealth = 0;
         int maxHealth = 300;
         int fleetHealth;
@@ -17,8 +17,8 @@ namespace TheGreatWar
 
         public Battlefield()
         {
-            fleet = " ";
-            herd = " ";
+            //fleet = new Fleet();
+            //herd = new Herd();
         }
 
         public int RandomAttacks(int minHealth, int maxHealth)
@@ -27,9 +27,9 @@ namespace TheGreatWar
             return random.Next(minHealth, maxHealth);
         }
 
-        public string AttackTurns()
+        public string Attack()
         {
-            string result = fleet + " " + fleetHealth + " " + herd + " " + herdHealth + " ";
+            string result = " " + fleetHealth + " " + herdHealth;
             return result;
         }
 
@@ -66,23 +66,23 @@ namespace TheGreatWar
 
             while (fleetHealth < 3 && herdHealth < 3)
             {
-                Console.WriteLine(fleet + "Fleet attack turn.");
+                Console.WriteLine("Fleet attack turn.");
                 Console.ReadLine();
 
                 fleetHealth = RandomAttacks(minHealth, maxHealth);
-                Console.WriteLine("Fleet attacked for: " + " ");
+                Console.WriteLine("Fleet attacked for: " + Attack());
 
-                Console.WriteLine(herd + "Herd attack turn.");
+                Console.WriteLine("Herd attack turn.");
                 Console.ReadLine();
 
                 herdHealth = RandomAttacks(minHealth, maxHealth);
-                Console.WriteLine("Herd attacked for: " + " ");
+                Console.WriteLine("Herd attacked for: " + Attack());
 
                 BattleDamageAssessment();
 
                 Console.WriteLine();
 
-                Console.WriteLine(AttackTurns());
+                Console.WriteLine(Attack());
 
                 BattleWinner();
             }
