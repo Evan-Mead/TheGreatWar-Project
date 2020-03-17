@@ -8,8 +8,8 @@ namespace TheGreatWar
 {
     class Battlefield
     {
-        //public Fleet();
-        //public Herd();
+        //string fleet = "Fleet";
+        //string herd = "Herd";
         int minHealth = 0;
         int maxHealth = 300;
         int fleetHealth;
@@ -17,8 +17,8 @@ namespace TheGreatWar
 
         public Battlefield()
         {
-            //fleet = new Fleet();
-            //herd = new Herd();
+            //fleet = " ";
+            //herd = " ";
         }
 
         public int RandomAttacks(int minHealth, int maxHealth)
@@ -29,7 +29,7 @@ namespace TheGreatWar
 
         public string Attack()
         {
-            string result = " " + fleetHealth + " " + herdHealth;
+            string result = " " + fleetHealth  + " " + herdHealth;
             return result;
         }
 
@@ -64,7 +64,7 @@ namespace TheGreatWar
         {
             Console.WriteLine("This is a simulated battle between a fleet of robots and a herd of dinosaurs.");
 
-            while (fleetHealth < 3 && herdHealth < 3)
+            while (fleetHealth == herdHealth)
             {
                 Console.WriteLine("Fleet attack turn.");
                 Console.ReadLine();
